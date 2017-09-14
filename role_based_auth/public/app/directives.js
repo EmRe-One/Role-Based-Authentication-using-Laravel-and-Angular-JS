@@ -1,0 +1,1 @@
+var directive = angular.module('app.directives',['app.factories']);	

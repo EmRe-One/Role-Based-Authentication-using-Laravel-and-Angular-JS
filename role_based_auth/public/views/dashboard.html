@@ -1,0 +1,27 @@
+{{message}}
+<br/>
+User is :: {{userType}}
+<br/>
+User have Read Permission :: {{readPermission}}
+<br/>
+User have Write Permission :: {{writePemission}}
+<br/>
+User have Execute Permission :: {{executePermission}}
+<br/>
+User can Create Users :: {{createUser}}
+<br/>
+
+<table class="table">
+	<tr>
+		<th>Id</th>
+		<th>Name</th>
+		<th>Email</th>
+	</tr>
+	<tr ng-repeat='user in users'>
+		<td>{{user.id}}</td>
+		<td>{{user.name}}</td>
+		<td>{{user.email}}</td>
+	</tr>
+</table>
+<br>	
+<button ng-click="logout()">Logout</button>
